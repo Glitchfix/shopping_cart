@@ -28,7 +28,6 @@ class User(AbstractUser):
         related_query_name="user",
     )
 
-    id = models.IntegerField(primary_key=True, editable=False, blank=True)
     address = models.CharField(max_length=255)
     phone_number = models.CharField(max_length=20)
 

@@ -7,5 +7,11 @@ class Product(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
+    @classmethod
+    def create(cls, name, price, description):
+        product = cls(name=name, price=price, description=description)
+        product.save()
+        return product
+
     def __str__(self):
         return self.name
