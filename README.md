@@ -1,6 +1,14 @@
 # Shopping Cart API Documentation
 
 This documentation provides an overview of the endpoints and their respective functionalities for the Shopping Cart API.
+
+# Install dependencies
+To install the dependencies for the Cart API, you can use the following command:
+
+```shell
+make install-deps
+```
+
 # Test
 
 To run the tests for the Cart API, you can use the following command:
