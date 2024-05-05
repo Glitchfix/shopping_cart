@@ -1,26 +1,6 @@
 # Shopping Cart API Documentation
 
 This documentation provides an overview of the endpoints and their respective functionalities for the Shopping Cart API.
-
-
-# Integration test
-Test the flow of adding items to the cart, placing orders, and listing orders.
-
-This test case performs the following steps:
-1. Registers a user with the provided username, password, first name, last name, and email.
-2. Logs in the user using the registered username and password.
-3. Retrieves the user's profile information.
-4. Adds two products to the cart with their respective name, description, and price.
-5. Lists the available products.
-6. Adds items to the cart and clears the cart.
-7. Adds items to the cart, places an order, and cancels the order.
-8. Adds items to the cart, places an order, and completes the payment.
-9. Adds items to the cart and places an order.
-10. Lists the user's orders.
-
-This test case ensures that the cart flow, order placement, and order listing functionalities are working correctly in the store application.
-
-
 # Test
 
 To run the tests for the Cart API, you can use the following command:
@@ -51,6 +31,24 @@ By organizing the data model in this way, the system can efficiently handle oper
 ## Integrating Business Logic
 
 Business logic was integrated to handle scenarios typical of shopping environments, such as cart management, order processing, and payment transactions. Special attention was given to ensuring transactions are handled atomically to avoid data inconsistencies.
+
+### Integration test
+Test the flow of adding items to the cart, placing orders, and listing orders.
+
+This test case performs the following steps:
+1. Registers a user with the provided username, password, first name, last name, and email.
+2. Logs in the user using the registered username and password.
+3. Retrieves the user's profile information.
+4. Adds two products to the cart with their respective name, description, and price.
+5. Lists the available products.
+6. Adds items to the cart and clears the cart.
+7. Adds items to the cart, places an order, and cancels the order.
+8. Adds items to the cart, places an order, and completes the payment.
+9. Adds items to the cart and places an order.
+10. Lists the user's orders.
+
+This test case ensures that the cart flow, order placement, and order listing functionalities are working correctly in the store application.
+
 
 ## API Implementation
 
